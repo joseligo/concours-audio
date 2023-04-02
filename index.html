@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Qui cuicuitte ?</title>
+</head>
+<body>
+
+    <header>
+        
+    </header>
+
+    <div class="container">
+
+        <h1>Les mélodies du jardin</h1>
+
+        <div class="selector">
+                <img class="vignette" src="ressources/mesange.jpg" alt="Mésange bleue" id="1">
+                <img class="vignette" src="ressources/rougegorge.jpg" alt="Rouge-gorge" id="2">
+                <img class="vignette" src="ressources/moineau.jpg" alt="Moineau" id="3">
+                <img class="vignette" src="ressources/bergeronnette.jpg" alt="Bergeronnette" id="4">
+        </div>
+
+        
+
+        <div class="result">
+                
+                <div class="encart">
+                    <h1 class="espece"></h1>
+                    <h3>Fiche d'identité</h3>
+                    <p class="element">Nom latin :</p>
+                    <p class="element">Taille :</p>
+                    <p class="element">Couleur :</p>
+                    <p class="element">Régime alimentaire :</p>
+                    <p class="element">Niche :</p>
+                    <p class="element">Comportement :</p>
+                </div>
+                <div class="audio-container">
+                    <h3>Ecoutez-moi !!</h3>
+                    <audio autoplay src=""></audio>
+                    <div class="time">
+                        <img src="ressources/silhouette-oiseau.png" alt="" class="bird">
+                        <div class="masque"></div>
+                    </div>
+                    <div class="control">
+                        <button class="play control">Play</button>
+                        <button class="stop control">Stop</button>
+                    </div>
+                    <div class="input-radio">
+                        <p>Sélectionnez une option pour écouter un autre type de chant</p>
+                        <input type="radio" class="change-song" name="type" value="" checked id="song">
+                        <label for="song">Chant</label>
+                        <input type="radio" class="change-song" name="type" value="type:call" id="call">
+                        <label for="call">Cri</label>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
